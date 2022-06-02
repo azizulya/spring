@@ -1,4 +1,4 @@
-package com.cydeo.model;
+package src.main.java.com.cydeo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.cydeo.controller;
+package src.main.java.com.cydeo.controller;
 
 import com.cydeo.model.Mentor;
 import org.springframework.stereotype.Controller;
@@ -15,22 +15,25 @@ import java.util.List;
 @RequestMapping("/mentor")
 public class MentorController {
 
-    @GetMapping("/register")
-    public String showForm (Model model) {
-        model.addAttribute ("mentor", new Mentor ());
 
-        List<String> batchList = Arrays.asList ("B1", "B2", "B3", "B4", "B5", "B6", "B7");
-        model.addAttribute ("batchList", batchList);
+    @GetMapping("/register")
+    public String showForm(Model model){
+
+        model.addAttribute("mentor",new Mentor());
+
+        List<String> batchList = Arrays.asList("JD1","JD2","EU1","EU2","B18","B20");
+        model.addAttribute("batchList",batchList);
 
         return "mentor/mentor-register";
     }
 
     @PostMapping("/confirm")
-    public String showForm2 (@ModelAttribute("mentor") Mentor mentor, Model model) {
-        System.out.println (mentor.toString ());
+    public String showForm2(@ModelAttribute("mentor") Mentor mentor){
+
+//        return "mentor/mentor-confirmation";
         return "redirect:/mentor/register";
-
-        //return "mentor/mentor-confirmation";
-
     }
+
+
+
 }

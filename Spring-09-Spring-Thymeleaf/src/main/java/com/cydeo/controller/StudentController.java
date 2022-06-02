@@ -1,4 +1,4 @@
-package com.cydeo.controller;
+package src.main.java.com.cydeo.controller;
 
 
 import com.cydeo.bootstrap.DataGenerator;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/student")
 public class StudentController {
 
-   // @RequestMapping(value = "/register", method = RequestMethod.GET)
+//    @RequestMapping(value = "/register",method = RequestMethod.GET)
     @GetMapping("/register")
     public String register(Model model){
 
@@ -21,7 +21,7 @@ public class StudentController {
         return "student/register";
     }
 
-   // @RequestMapping(value = "/welcome", method = RequestMethod.POST)
+//    @RequestMapping("/welcome")
     @GetMapping("/welcome")
     public String info(){
         return "student/welcome";

@@ -1,4 +1,4 @@
-package src.main.java.com.cydeo;
+package com.cydeo;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;

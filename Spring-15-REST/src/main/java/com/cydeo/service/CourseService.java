@@ -1,4 +1,4 @@
-package src.main.java.com.cydeo.service;
+package com.cydeo.service;
 
 import com.cydeo.dto.CourseDTO;
 

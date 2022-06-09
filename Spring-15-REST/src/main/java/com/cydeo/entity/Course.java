@@ -1,4 +1,4 @@
-package src.main.java.com.cydeo.entity;
+package com.cydeo.entity;
 
 import lombok.Data;
 

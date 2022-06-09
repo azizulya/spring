@@ -1,4 +1,4 @@
-package src.main.java.com.cydeo.service.impl;
+package com.cydeo.service.impl;
 
 import com.cydeo.dto.CourseDTO;
 import com.cydeo.entity.Course;
